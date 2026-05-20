@@ -4,40 +4,36 @@ Config files for AeroSpace and WezTerm.
 
 ## Bootstrap a new Mac
 
-### 1. Install Homebrew
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-### 2. Clone this repo
+One-liner once you've cloned this repo:
 
 ```bash
 git clone https://github.com/jebadenas/dotfiles.git ~/dotfiles
+cd ~/dotfiles && ./bootstrap.sh
 ```
 
-### 3. Install apps and fonts
+`bootstrap.sh` will:
+
+1. Install Homebrew (if missing)
+2. Install every formula and cask in `Brewfile` via `brew bundle`
+3. Symlink `aerospace/aerospace.toml` and `wezterm/wezterm.lua` into `~/.config/`
+
+It's idempotent — safe to re-run after editing the Brewfile.
+
+### Refreshing the Brewfile from your current Mac
 
 ```bash
-brew install --cask aerospace wezterm
-brew install --cask font-jetbrains-mono-nerd-font
+brew bundle dump --file=~/dotfiles/Brewfile --force --describe
 ```
 
-### 4. Symlink configs
+### Manual follow-ups (Brew can't do these)
 
-```bash
-# AeroSpace
-mkdir -p ~/.config/aerospace
-ln -sf ~/dotfiles/aerospace/aerospace.toml ~/.config/aerospace/aerospace.toml
-
-# WezTerm
-mkdir -p ~/.config/wezterm
-ln -sf ~/dotfiles/wezterm/wezterm.lua ~/.config/wezterm/wezterm.lua
-```
-
-### 5. Launch AeroSpace
-
-Open AeroSpace from Spotlight or your Applications folder. It will start automatically on future logins once running.
+- Launch AeroSpace from `/Applications` and grant Accessibility permission
+- `gh auth login`
+- `aws configure` (or `aws sso login`)
+- `az login`
+- Copy `~/.ssh/` from old Mac (do NOT commit)
+- Copy `~/.kube/config` if needed
+- Sign in to Slack, Chrome, Postman; export/import DBeaver connections
 
 ---
 
