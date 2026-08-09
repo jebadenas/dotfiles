@@ -23,6 +23,8 @@ brew "jq"
 brew "kubernetes-cli"
 # Java-based project management
 brew "maven"
+# Ambitious Vim-fork focused on extensibility and usability
+brew "neovim"
 # Development kit for the Java programming language
 brew "openjdk@11"
 # Development kit for the Java programming language

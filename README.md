@@ -1,6 +1,6 @@
 # dotfiles
 
-Config files for AeroSpace and WezTerm.
+Config files for AeroSpace, WezTerm and Neovim.
 
 ## Bootstrap a new Mac
 
@@ -15,7 +15,7 @@ cd ~/dotfiles && ./bootstrap.sh
 
 1. Install Homebrew (if missing)
 2. Install every formula and cask in `Brewfile` via `brew bundle`
-3. Symlink `aerospace/aerospace.toml` and `wezterm/wezterm.lua` into `~/.config/`
+3. Symlink `aerospace/aerospace.toml`, `wezterm/wezterm.lua` and `nvim/` into `~/.config/`
 
 It's idempotent — safe to re-run after editing the Brewfile.
 
@@ -43,6 +43,7 @@ brew bundle dump --file=~/dotfiles/Brewfile --force --describe
 |------|--------|-------------|
 | [AeroSpace](https://github.com/nikitabobko/AeroSpace) | `aerospace/aerospace.toml` | Tiling window manager |
 | [WezTerm](https://wezfurlong.org/wezterm/) | `wezterm/wezterm.lua` | Terminal emulator |
+| [Neovim](https://neovim.io/) | `nvim/` | Text editor |
 
 ### AeroSpace key bindings
 

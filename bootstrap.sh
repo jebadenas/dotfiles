@@ -50,6 +50,7 @@ link() {
 log "Symlinking configs..."
 link "$DOTFILES/aerospace/aerospace.toml" "$HOME/.config/aerospace/aerospace.toml"
 link "$DOTFILES/wezterm/wezterm.lua"      "$HOME/.config/wezterm/wezterm.lua"
+link "$DOTFILES/nvim"                     "$HOME/.config/nvim"
 
 log "Done. Next steps:"
 cat <<'EOF'
