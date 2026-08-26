@@ -1,0 +1,12 @@
+onboarding = false
+[keys]
+new_workspace = "prefix+shift+n"
+navigate_workspace_up = "k"
+navigate_workspace_down = "j"
+
+[ui]
+agent_panel_sort = "priority"
+
+[theme]
+name = "dracula"
+auto_switch = false
