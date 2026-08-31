@@ -15,3 +15,17 @@ agent_panel_sort = "priority"
 [theme]
 name = "catppuccin"
 auto_switch = false
+
+[[keys.command]]
+key = "prefix+alt+m"
+type = "popup"
+command = "/Users/josbadenas/dotfiles/herdr/move-pane.sh"
+description = "move pane to tab (pick)"
+width = "60%"
+height = "40%"
+
+[[keys.command]]
+key = "prefix+alt+n"
+type = "shell"
+command = "/opt/homebrew/bin/herdr pane move $HERDR_ACTIVE_PANE_ID --new-tab"
+description = "pop pane into new tab"
