@@ -1,4 +1,4 @@
--- Fuzzy finder: files, live grep, buffers, diagnostics.
+-- Fuzzy finder: files, live grep, buffers, diagnostics, git status.
 return {
 	"ibhagwan/fzf-lua",
 	config = function()
@@ -15,5 +15,7 @@ return {
 		vim.keymap.set("n", "<leader>fh", fzf.help_tags, { desc = "FZF Help Tags" })
 		vim.keymap.set("n", "<leader>fx", fzf.diagnostics_document, { desc = "FZF Diagnostics Document" })
 		vim.keymap.set("n", "<leader>fX", fzf.diagnostics_workspace, { desc = "FZF Diagnostics Workspace" })
+		vim.keymap.set("n", "<leader>gs", fzf.git_status, { desc = "FZF Git Status (Repo Changes)" })
+		vim.keymap.set("n", "<leader>gc", fzf.git_commits, { desc = "FZF Git Commits" })
 	end,
 }
