@@ -13,7 +13,7 @@ navigate_workspace_down = "j"
 agent_panel_sort = "priority"
 
 [theme]
-name = "catppuccin"
+name = "catppuccin-latte"
 auto_switch = false
 
 [[keys.command]]

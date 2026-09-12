@@ -38,7 +38,7 @@ opt.ignorecase = true
 opt.smartcase = true
 
 opt.termguicolors = true -- full 24-bit color for rich treesitter highlighting
-opt.background = "dark"
+opt.background = "light"
 opt.scrolloff = 8
 opt.signcolumn = "yes"
 

@@ -28,6 +28,12 @@ function M.setup()
 		table.insert(servers, "jdtls")
 	end
 
+	-- ts_ls (JS/TS/React) only if the binary is installed
+	if vim.fn.executable("typescript-language-server") == 1 then
+		require("servers.ts_ls")
+		table.insert(servers, "ts_ls")
+	end
+
 	vim.lsp.enable(servers)
 end
 
