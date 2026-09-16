@@ -26,4 +26,11 @@ config.send_composed_key_when_left_alt_is_pressed = false
 -- inherits these 16 colors.
 config.color_scheme = "Catppuccin Latte"
 
+-- Keep the cursor visible against the light background.
+config.colors = {
+	cursor_bg = "#4c4f69",
+	cursor_border = "#4c4f69",
+	cursor_fg = "#eff1f5",
+}
+
 return config

@@ -14,7 +14,9 @@ end
 
 local opt = vim.opt
 
-opt.guicursor = ""
+-- Use an explicit dark cursor highlight instead of the terminal default.
+-- This keeps the cursor visible on light colorschemes/backgrounds.
+opt.guicursor = "n-v-c:block-Cursor,i-ci-ve:ver25-Cursor,r-cr:hor20-Cursor,o:hor50-Cursor"
 
 opt.nu = true
 opt.relativenumber = true
