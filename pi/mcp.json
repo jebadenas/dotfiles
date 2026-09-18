@@ -1,0 +1,11 @@
+{
+  "settings": {
+    "autoAuth": true
+  },
+  "mcpServers": {
+    "atlassian-rovo-mcp": {
+      "url": "https://mcp.atlassian.com/v1/mcp",
+      "auth": "oauth"
+    }
+  }
+}

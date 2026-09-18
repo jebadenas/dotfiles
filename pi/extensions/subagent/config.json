@@ -1,0 +1,18 @@
+{
+  "globalConcurrencyLimit": 2,
+  "maxActiveAsyncRunsPerSession": 2,
+  "maxSubagentDepth": 1,
+  "worktree": false,
+  "artifactDir": "session",
+  "fleetView": true,
+  "fleetViewPlacement": "belowEditor",
+  "asyncWidget": true,
+  "authorityPolicy": {
+    "discardWorktree": "confirm",
+    "destructiveCleanup": "confirm",
+    "spawnBudgetGrant": "confirm",
+    "scheduleCreate": "auto",
+    "stopRun": "auto",
+    "steerRun": "auto"
+  }
+}

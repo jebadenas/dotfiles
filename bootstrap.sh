@@ -53,6 +53,11 @@ link "$DOTFILES/wezterm/wezterm.lua"      "$HOME/.config/wezterm/wezterm.lua"
 link "$DOTFILES/herdr/config.toml"        "$HOME/.config/herdr/config.toml"
 link "$DOTFILES/nvim"                     "$HOME/.config/nvim"
 
+# Pi coding agent config (individual files/dirs; excludes secrets & local state)
+for pi_item in settings.json mcp.json AGENTS.md web-search.json skills extensions; do
+  link "$DOTFILES/pi/$pi_item" "$HOME/.pi/agent/$pi_item"
+done
+
 log "Done. Next steps:"
 cat <<'EOF'
 

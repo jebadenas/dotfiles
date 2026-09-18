@@ -1,0 +1,14 @@
+# Generated / installed dependencies inside tracked pi extensions
+extensions/*/node_modules/
+extensions/**/node_modules/
+
+# Never commit secrets or local state (these are NOT symlinked here,
+# listed only as a safety net in case they ever get copied in)
+auth.json
+models-store.json
+mcp-cache.json
+mcp-npx-cache.json
+web-search-cache/
+sessions/
+missions/
+tickets/

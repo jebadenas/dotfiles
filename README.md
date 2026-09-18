@@ -15,7 +15,7 @@ cd ~/dotfiles && ./bootstrap.sh
 
 1. Install Homebrew (if missing)
 2. Install every formula and cask in `Brewfile` via `brew bundle`
-3. Symlink `aerospace/aerospace.toml`, `wezterm/wezterm.lua`, `herdr/config.toml`, and `nvim/` into `~/.config/`
+3. Symlink `aerospace/aerospace.toml`, `wezterm/wezterm.lua`, `herdr/config.toml`, `nvim/`, and the `pi/` agent config into place
 
 It's idempotent — safe to re-run after editing the Brewfile.
 
@@ -45,6 +45,7 @@ brew bundle dump --file=~/dotfiles/Brewfile --force --describe
 | [WezTerm](https://wezfurlong.org/wezterm/) | `wezterm/wezterm.lua` | Terminal emulator |
 | [Herdr](https://herdr.dev) | `herdr/config.toml` | Terminal workspace manager for coding agents |
 | [Neovim](https://neovim.io/) | `nvim/` | Text editor |
+| [Pi](https://pi.dev) | `pi/` | Coding agent: settings, MCP servers, AGENTS.md, skills, extensions (secrets & session state excluded) |
 
 ### AeroSpace key bindings
 

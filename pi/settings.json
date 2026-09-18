@@ -1,0 +1,11 @@
+{
+  "lastChangelogVersion": "0.85.1",
+  "theme": "light",
+  "defaultProvider": "github-copilot",
+  "defaultModel": "claude-opus-4.8",
+  "packages": [
+    "npm:pi-web-access",
+    "npm:pi-subagents",
+    "npm:pi-mcp-adapter"
+  ]
+}
